@@ -1,11 +1,14 @@
 ---
-- name: Create the user and group
+
+- name: Create group
   group:
-    name: "{{ taskserver_group }}"
+    name: '{{ taskserver_group }}'
     state: present
+
+- name: Create User    
   user:
-    name: "{{ taskserver_user }}"
-    group: "{{ taskserver_group }}"
+    name: '{{ taskserver_user }}'
+    group: '{{ taskserver_group }}'
     state: present
 
 - name: install task from apt

@@ -1,0 +1,15 @@
+---
+# tasks file for taskserver.role
+- name: Create the user and group
+  group:
+    name: {{ taskserver_group }}
+    state: present
+  user:
+    name: {{ taskserver_user }}
+    group: {{ taskserver_group }}
+    state: present
+
+- name: install task from apt
+  apt:
+    name: task
+    update_cache: yes

@@ -1,0 +1,5 @@
+---
+# defaults file for taskserver.role
+taskserver_port: 53589
+taskserver_user: taskserver
+taskserver_group: taskserver

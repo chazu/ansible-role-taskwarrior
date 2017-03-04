@@ -1,9 +1,9 @@
 galaxy_info:
   author: Chazu
   owner: Chazu
-  description: Simple Playbook for installing taskserver on Ubuntu
-  company: Quantsum.org
-  license: MIT
+  description: "Simple Role for installing taskserver on Ubuntu"
+  company: "Quantsum.org"
+  license: "license (MIT)"
   min_ansible_version: 1.2
   platforms:
   - name: Ubuntu
@@ -11,4 +11,3 @@ galaxy_info:
     - all
   galaxy_tags:
     - taskwarrior
-dependencies: []

@@ -1,5 +1,4 @@
 ---
-# tasks file for taskserver.role
 - name: Create the user and group
   group:
     name: {{ taskserver_group }}

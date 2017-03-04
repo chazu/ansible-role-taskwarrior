@@ -1,5 +1,6 @@
 galaxy_info:
   author: Chazu
+  owner: Chazu
   description: Simple Playbook for installing taskserver on Ubuntu
   company: Quantsum.org
   license: MIT

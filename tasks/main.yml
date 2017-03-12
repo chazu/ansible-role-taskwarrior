@@ -20,11 +20,11 @@
   include_role:
     name: tumf.systemd-service
     vars: 
-      systemd_service_name: "taskserver"
-      systemd_service_Unit_Description: "Taskwarrior server"
-      systemd_service_Unit_Requires: network.target
-      systemd_service_Unit_After: network.target
-      systemd_service_envs:
+    - systemd_service_name: "taskserver"
+    - systemd_service_Unit_Description: "Taskwarrior server"
+    - systemd_service_Unit_Requires: "network.target"
+    - systemd_service_Unit_After: "network.target"
+    - systemd_service_envs:
         - "TASKDGROUP={{taskserver_group}}"
         - "TASKDUSER={{taskserver_user}}"
-      systemd_service_Service_ExecStart: "/usr/local/bin/taskd server --data /var/taskd"
+    - systemd_service_Service_ExecStart: "/usr/local/bin/taskd server --data /var/taskd"
